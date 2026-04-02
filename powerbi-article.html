@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Dashboard Guide | Harish Motwani</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0a0f18; color: #f8fafc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    </style>
+</head>
+<body class="antialiased selection:bg-teal-500 selection:text-white pb-20">
+
+    <nav class="w-full bg-[#111827] border-b border-gray-800 py-4 fixed top-0 z-50">
+        <div class="max-w-3xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center text-gray-400 hover:text-teal-400 transition">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Portfolio
+            </a>
+            <span class="text-sm font-semibold text-teal-500 tracking-wider uppercase">Research & Guides</span>
+        </div>
+    </nav>
+
+    <article class="max-w-3xl mx-auto px-4 mt-32">
+        <header class="mb-12 border-b border-gray-800 pb-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Building Your First Finance Dashboard in Power BI</h1>
+            <div class="flex items-center text-gray-400 text-sm">
+                <span class="text-teal-400 font-semibold mr-4">By Harish Motwani</span>
+                <span>5 min read</span>
+            </div>
+        </header>
+
+        <div class="prose prose-invert prose-teal max-w-none text-gray-300 leading-relaxed space-y-6">
+            <h3 class="text-2xl font-bold text-white mt-8 mb-4">The End of the Static Spreadsheet</h3>
+            <p>For decades, the financial summary has lived inside static spreadsheet cells. As finance professionals, we spend hours exporting trial balances, running VLOOKUPs, and formatting pivot tables just to present a snapshot of the past. But in a data-driven world, clients and stakeholders no longer just want to know what happened; they want to interact with the data to understand <em>why</em> it happened.</p>
+            <p>This is where Power BI bridges the gap between traditional accounting and modern data analytics. Building your first interactive finance dashboard might seem daunting, but the logic is exactly the same as drafting financial statements—it is just a different toolset.</p>
+
+            <h3 class="text-2xl font-bold text-white mt-10 mb-4">Step 1: Data Extraction and Transformation (Power Query)</h3>
+            <p>Before you can visualize anything, your data must be clean. This is where 80% of the actual work happens. When you pull a Trial Balance or general ledger from an ERP system, it is rarely formatted for a database. Using Power Query, you can automate the cleanup process:</p>
+            <ul class="list-disc pl-6 space-y-2 mb-6 text-gray-400">
+                <li><strong class="text-gray-300">Unpivot columns</strong> to ensure your dates, accounts, and amounts are in a tabular format.</li>
+                <li><strong class="text-gray-300">Filter out</strong> blank rows and unnecessary subtotal lines.</li>
+            </ul>
+            <p>The beauty of Power Query is that it records your steps. The next month, you simply drop the new data in, hit refresh, and the cleanup happens automatically.</p>
+
+            <h3 class="text-2xl font-bold text-white mt-10 mb-4">Step 2: Building the Financial Data Model</h3>
+            <p>In Excel, we use VLOOKUP to connect datasets. In Power BI, we build a Data Model. You need to establish relationships between your "Fact Table" (your actual general ledger transactions) and your "Dimension Tables" (your Chart of Accounts mapping and your Calendar table).</p>
+            <div class="bg-[#111827] border border-gray-800 p-4 rounded-lg my-6">
+                <strong class="text-teal-400">Pro Tip:</strong> Always create a dedicated 'Date Table'. This allows you to perform powerful Time Intelligence calculations later, like Year-to-Date (YTD) revenue or Month-over-Month (MoM) expense variance.
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mt-10 mb-4">Step 3: Writing the Financial Logic (DAX)</h3>
+            <p>DAX (Data Analysis Expressions) is the formula language of Power BI. Instead of calculating a single cell, DAX calculates over entire columns and tables. By defining these measures once, they will accurately calculate no matter how the user slices or filters the final dashboard.</p>
+
+            <h3 class="text-2xl font-bold text-white mt-10 mb-4">Step 4: Crafting the Visual Narrative</h3>
+            <p>A dashboard should tell a story at a glance. Avoid cluttering the screen with pie charts. Stick to high-impact financial visuals:</p>
+            <ul class="list-disc pl-6 space-y-2 mb-6 text-gray-400">
+                <li><strong class="text-gray-300">KPI Cards:</strong> Place these at the top to show the most critical metrics instantly (Net Income, Total Revenue) alongside a variance indicator.</li>
+                <li><strong class="text-gray-300">Waterfall Charts:</strong> Excellent for showing how Gross Revenue is reduced by COGS and operating expenses down to Net Income.</li>
+                <li><strong class="text-gray-300">Matrix Visuals:</strong> The Power BI equivalent of a highly interactive Pivot Table, allowing users to drill down from a high-level P&L category directly into the individual ledger accounts.</li>
+            </ul>
+
+            <h3 class="text-2xl font-bold text-white mt-10 mb-4">The Hybrid Professional Advantage</h3>
+            <p>Learning Power BI is no longer just for IT professionals; it is a core competency for the modern algorithmic auditor and financial advisor. By mastering these tools, you elevate your role from someone who merely prepares the data to someone who architects the insights.</p>
+        </div>
+    </article>
+
+</body>
+</html>
