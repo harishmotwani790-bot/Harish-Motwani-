@@ -6,49 +6,57 @@
     <title>From Ledger to Code | Harish Motwani</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #0a0f18; color: #f8fafc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        /* Minimalist Grey Aesthetic */
+        body { background-color: #fafafa; color: #27272a; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        /* Frosted glass effect for grey theme */
+        .glass-panel { 
+            background: rgba(250, 250, 250, 0.85); 
+            backdrop-filter: blur(16px); 
+            border-bottom: 1px solid rgba(228, 228, 231, 0.8); 
+        }
     </style>
 </head>
-<body class="antialiased selection:bg-teal-500 selection:text-white pb-20">
+<body class="antialiased selection:bg-zinc-800 selection:text-white pb-20">
 
-    <nav class="w-full bg-[#111827] border-b border-gray-800 py-4 fixed top-0 z-50">
+    <nav class="w-full glass-panel py-4 fixed top-0 z-50">
         <div class="max-w-3xl mx-auto px-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center text-gray-400 hover:text-teal-400 transition">
+            <a href="index.html" class="flex items-center text-zinc-500 hover:text-zinc-900 transition font-semibold">
                 <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
                 Back to Portfolio
             </a>
-            <span class="text-sm font-semibold text-teal-500 tracking-wider uppercase">Thought Leadership</span>
+            <span class="text-sm font-bold text-zinc-500 tracking-wider uppercase">Thought Leadership</span>
         </div>
     </nav>
 
     <article class="max-w-3xl mx-auto px-4 mt-32">
-        <header class="mb-12 border-b border-gray-800 pb-8">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">The Paradigm Shift: From Ledger to Code in the CA Profession</h1>
-            <div class="flex items-center text-gray-400 text-sm">
-                <span class="text-teal-400 font-semibold mr-4">By Harish Motwani</span>
+        <header class="mb-12 border-b border-zinc-200 pb-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-zinc-900 mb-6 leading-tight">The Paradigm Shift: From Ledger to Code in the CA Profession</h1>
+            <div class="flex items-center text-zinc-500 text-sm font-medium">
+                <span class="text-zinc-900 font-bold mr-4">By Harish Motwani</span>
                 <span>6 min read</span>
             </div>
         </header>
 
-        <div class="prose prose-invert prose-teal max-w-none text-gray-300 leading-relaxed space-y-6">
-            <p class="text-lg text-gray-400 font-medium">The evolution of accounting is accelerating. We moved from physical red ledgers to digital spreadsheets decades ago. Today, we are standing at the edge of the next massive leap: moving from spreadsheets to code.</p>
+        <div class="text-zinc-700 leading-relaxed space-y-6 text-lg">
+            <p class="text-xl text-zinc-600 font-medium mb-8">The evolution of accounting is accelerating. We moved from physical red ledgers to digital spreadsheets decades ago. Today, we are standing at the edge of the next massive leap: moving from spreadsheets to code.</p>
 
-            <h3 class="text-2xl font-bold text-white mt-10 mb-4">The Ceiling of Traditional Tools</h3>
+            <h3 class="text-2xl font-bold text-zinc-900 mt-10 mb-4">The Ceiling of Traditional Tools</h3>
             <p>Excel is the undisputed canvas of the finance world. However, as data volumes explode, traditional tools are hitting their limits. When auditing a company processing millions of micro-transactions, a standard spreadsheet will freeze, crash, or take hours to run a simple VLOOKUP. Furthermore, routine compliance tasks—like downloading hundreds of Form 26AS statements or logging into GST portals—consume massive amounts of high-value professional time on low-value data entry.</p>
             <p>This is the bottleneck that modern Chartered Accountants must solve.</p>
 
-            <h3 class="text-2xl font-bold text-white mt-10 mb-4">Enter Python and VBA</h3>
+            <h3 class="text-2xl font-bold text-zinc-900 mt-10 mb-4">Enter Python and VBA</h3>
             <p>Programming languages are no longer exclusive to software engineers. For a finance professional, learning Python or VBA is equivalent to gaining a digital superpower.</p>
-            <ul class="list-disc pl-6 space-y-2 mb-6 text-gray-400">
-                <li><strong class="text-gray-300">VBA (Visual Basic for Applications):</strong> The ultimate tool for automating within the Microsoft ecosystem. Whether it is a macro to instantly generate a hyperlinked Table of Contents for a 100-sheet audit workbook, or a script to clean up raw bank statements in seconds, VBA turns hours of clicking into a single keystroke.</li>
-                <li><strong class="text-gray-300">Python:</strong> When data exceeds Excel's row limit, Python's <em>Pandas</em> library steps in. Python allows auditors to move away from "sample testing" and perform 100% population analysis in seconds. It can script automated interactions with web portals, bypassing repetitive UI navigation entirely.</li>
+            <ul class="list-disc pl-6 space-y-3 mb-6 text-zinc-700">
+                <li><strong class="text-zinc-900">VBA (Visual Basic for Applications):</strong> The ultimate tool for automating within the Microsoft ecosystem. Whether it is a macro to instantly generate a hyperlinked Table of Contents for a 100-sheet audit workbook, or a script to clean up raw bank statements in seconds, VBA turns hours of clicking into a single keystroke.</li>
+                <li><strong class="text-zinc-900">Python:</strong> When data exceeds Excel's row limit, Python's <em>Pandas</em> library steps in. Python allows auditors to move away from "sample testing" and perform 100% population analysis in seconds. It can script automated interactions with web portals, bypassing repetitive UI navigation entirely.</li>
             </ul>
 
-            <h3 class="text-2xl font-bold text-white mt-10 mb-4">Practical Application Over Theory</h3>
+            <h3 class="text-2xl font-bold text-zinc-900 mt-10 mb-4">Practical Application Over Theory</h3>
             <p>The true value of code in accounting isn't in building complex software; it is in solving daily frictions. For example, during peak tax seasons, session timeouts and manual credential entries on government portals cost firms countless billable hours. A simple Python/VBA automated login script reclaims that time.</p>
             <p>Similarly, parsing messy textual data from a Form 26AS into a structured, tabular format manually is prone to human error. A scripted utility ensures zero-error compliance every single time.</p>
 
-            <h3 class="text-2xl font-bold text-white mt-10 mb-4">The Future is the "Algorithmic Auditor"</h3>
+            <h3 class="text-2xl font-bold text-zinc-900 mt-10 mb-4">The Future is the "Algorithmic Auditor"</h3>
             <p>The role of the CA is shifting from a data preparer to a strategic reviewer. When code handles the extraction, transformation, and reconciliation of financial data, the accountant's focus elevates to interpreting anomalies, ensuring regulatory adherence, and advising on strategic growth.</p>
             <p>The modern financial strategist must carry the Standards on Auditing in one hand, and a script of code in the other.</p>
         </div>

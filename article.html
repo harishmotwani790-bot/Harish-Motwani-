@@ -6,33 +6,41 @@
     <title>Article | The Digital Mandate</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #0a0f18; color: #f8fafc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        /* Minimalist Grey Aesthetic */
+        body { background-color: #fafafa; color: #27272a; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        /* Frosted glass effect for grey theme */
+        .glass-panel { 
+            background: rgba(250, 250, 250, 0.85); 
+            backdrop-filter: blur(16px); 
+            border-bottom: 1px solid rgba(228, 228, 231, 0.8); 
+        }
     </style>
 </head>
-<body class="antialiased selection:bg-teal-500 selection:text-white pb-20">
+<body class="antialiased selection:bg-zinc-800 selection:text-white pb-20">
 
-    <nav class="w-full bg-[#111827] border-b border-gray-800 py-4 fixed top-0 z-50">
+    <nav class="w-full glass-panel py-4 fixed top-0 z-50">
         <div class="max-w-4xl mx-auto px-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center text-gray-400 hover:text-teal-400 transition">
+            <a href="index.html" class="flex items-center text-zinc-500 hover:text-zinc-900 transition font-semibold">
                 <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
                 Back to Portfolio
             </a>
-            <span class="text-sm font-semibold text-teal-500 tracking-wider uppercase">ICAI Publication</span>
+            <span class="text-sm font-bold text-zinc-500 tracking-wider uppercase">ICAI Publication</span>
         </div>
     </nav>
 
     <div class="max-w-4xl mx-auto px-4 mt-28">
         
         <div class="text-center mb-12">
-            <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">The Digital Mandate</h1>
-            <p class="text-xl text-gray-400">From Statutory Auditor to Algorithmic Auditor</p>
-            <div class="h-1 w-24 bg-teal-500 mx-auto mt-6 rounded-full opacity-75"></div>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-zinc-900 mb-4">The Digital Mandate</h1>
+            <p class="text-xl font-medium text-zinc-600">From Statutory Auditor to Algorithmic Auditor</p>
+            <div class="h-1 w-24 bg-zinc-800 mx-auto mt-6 rounded-full opacity-75"></div>
         </div>
 
-        <div class="flex flex-col items-center space-y-8 shadow-2xl">
-            <img src="images/icai-page1.jpg" alt="Article Page 1" class="w-full h-auto rounded-md shadow-[0_0_40px_rgba(0,0,0,0.5)] border border-gray-800">
-            <img src="images/icai-page2.jpg" alt="Article Page 2" class="w-full h-auto rounded-md shadow-[0_0_40px_rgba(0,0,0,0.5)] border border-gray-800">
-            <img src="images/icai-page3.jpg" alt="Article Page 3" class="w-full h-auto rounded-md shadow-[0_0_40px_rgba(0,0,0,0.5)] border border-gray-800">
+        <div class="flex flex-col items-center space-y-8">
+            <img src="images/icai-page1.jpg" alt="Article Page 1" class="w-full h-auto rounded-xl shadow-xl border border-zinc-200">
+            <img src="images/icai-page2.jpg" alt="Article Page 2" class="w-full h-auto rounded-xl shadow-xl border border-zinc-200">
+            <img src="images/icai-page3.jpg" alt="Article Page 3" class="w-full h-auto rounded-xl shadow-xl border border-zinc-200">
         </div>
 
     </div>
